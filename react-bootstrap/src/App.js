@@ -3,7 +3,6 @@ import { Button } from 'react-bootstrap'
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
 const header = (props) => {
   return (
     <div>
@@ -14,15 +13,14 @@ const header = (props) => {
   )
 }
 
-
 const App = () => {
   
   const name = "Imin"
-  const response = "Yes!"
+  const response = "Click the button!"
   
   const btnHello = () => {
     const text = document.getElementById('text')
-    text.innerHTML = name
+    text.innerHTML = `${name} say Yes!`
   }
 
   return (
@@ -30,7 +28,7 @@ const App = () => {
       {
         header({ name, response })
       }
-      <Button varian="primary" onClick={btnHello}>Hello</Button>
+      <Button varian="primary" onClick={btnHello}>Yes!</Button>
     </div>
   )
 }
