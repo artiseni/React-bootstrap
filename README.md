@@ -1,2 +1,2 @@
 # React-bootstrap
-Belajar bbootstrap pada react
+Belajar bootstrap pada react
